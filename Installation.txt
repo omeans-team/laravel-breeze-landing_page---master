@@ -1,0 +1,27 @@
+1. Install laravel
+-composer create-project --prefer-dist laravel/laravel example-app "10.*"
+
+2. Package starter kit laravel (laravel breeze)
+-composer require laravel/breeze --dev
+-run server & add db
+-edit .env
+
+3. Install breeze
+-php artisan breeze:install
+-npm install
+-npm run dev
+
+4. Add template
+-folder root/template
+
+5. Add index & asset public
+-folder root/resource/views/frontend/app.blade.php
+-route welcome to root/resource/views/frontend/app.blade.php ('frontend.app')
+-copy asset template to root/public/frontend
+-sesuaikan pemanggilan css dan js :
+css/normalize.css menjadi {{ asset('frontend/css/normalize.css') }}
+{{ asset(' artinya root/
+-sesuaikan bg asseet style:
+style="background-image:url('img/slider3.jpg')"
+menjadi
+style="background-image:url('frontend/img/slider3.jpg')"
